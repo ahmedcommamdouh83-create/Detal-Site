@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>طربوش سنان مجانًا 🦷 جامعة الإسكندرية</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <i class="bubble b1"></i><i class="bubble b2"></i><i class="bubble b3"></i>
+  <div class="badge">🦷 جامعة الإسكندرية</div>
+  <h1>ابتسامتك علينا 💖<br>علاج أسنان مجانًا</h1>
+  <p>حشوات • طربوش • طقم جزئي<br>تحت إشراف دكاترة جامعة الإسكندرية</p>
+  <div class="free">مجانًا 100%</div>
+</header>
+
+<main class="wrap">
+  <section class="perks">
+    <div class="perk"><span>👩‍⚕️</span>تحت إشراف دكاترة</div>
+    <div class="perk"><span>🎀</span>بدون أي رسوم</div>
+    <div class="perk"><span>✨</span>طالبات وطلاب كلية الأسنان</div>
+  </section>
+
+  <section class="services">
+    <h2 class="sec">الخدمات المتاحة 🌷</h2>
+    <article class="svc"><img src="images/filling.jpg" alt="تسوس بسيط يحتاج حشوة" loading="lazy"><div class="body"><h3>حشوة معدنية 🦷</h3><p>لو عندك تسوس بسيط ومحتاج حشوة، متاحة مجانًا في كلية طب الأسنان جامعة الإسكندرية.</p><button type="button" class="book-btn" data-service="حشوة معدنية (تسوس بسيط)">احجز/ي الخدمة دي</button></div></article>
+    <article class="svc"><img src="images/crown.jpg" alt="طربوش كراون" loading="lazy"><div class="body"><h3>طربوش (كراون / تلبيسة) 👑</h3><p>لو عامل حشو عصب لضرس ومحتاج طربوش يحميه، متاح مجانًا تحت إشراف الدكاترة والمعيدين.</p><button type="button" class="book-btn" data-service="طربوش (كراون / تلبيسة) بعد حشو عصب">احجز/ي الخدمة دي</button></div></article>
+    <article class="svc"><img src="images/denture.jpg" alt="طقم جزئي" loading="lazy"><div class="body"><h3>طقم جزئي 😁</h3><p>لو فاقد جزء كبير من أسنانك ومحتاج طقم جزئي، متاح مجانًا بإشراف الدكاترة والمعيدين.</p><button type="button" class="book-btn" data-service="طقم جزئي">احجز/ي الخدمة دي</button></div></article>
+    <div class="warn">⚠️ <b>تنبيه:</b> شرط الالتزام بالمواعيد</div>
+  </section>
+
+  <section class="card" id="book">
+    <h2> احجز/ي مكانك دلوقتي🌸</h2>
+    <p class="sub">املأ البيانات وهنكلمك على واتساب لتأكيد الميعاد</p>
+
+    <form id="f" novalidate>
+      <label for="name">الاسم بالكامل</label>
+      <input id="name" required placeholder="اكتب اسمك" autocomplete="name">
+      <div class="err">من فضلك اكتب اسمك</div>
+
+      <div class="row">
+        <div>
+          <label for="phone">رقم الموبايل</label>
+          <input id="phone" type="tel" inputmode="tel" required placeholder="01xxxxxxxxx" autocomplete="tel">
+          <div class="err">اكتب رقم صحيح</div>
+        </div>
+        <div>
+          <label for="age">السن</label>
+          <input id="age" type="number" inputmode="numeric" min="5" max="99" required placeholder="مثال: 28">
+          <div class="err">اكتب السن</div>
+        </div>
+      </div>
+
+      <label for="service">الخدمة المطلوبة</label>
+      <select id="service" required>
+        <option value="">اختار الخدمة</option>
+        <option>حشوة معدنية (تسوس بسيط)</option>
+        <option>طربوش (كراون / تلبيسة) بعد حشو عصب</option>
+        <option>طقم جزئي</option>
+        <option>استفسار عن خدمة تانية</option>
+      </select>
+      <div class="err">اختار الخدمة</div>
+
+      <label for="tooth">أي ضرس؟ (لو تعرفي)</label>
+      <input id="tooth" placeholder="مثال: ضرس سفلي يمين">
+
+      <label for="when">اتعمل حشو العصب إمتى؟</label>
+      <select id="when">
+        <option value="">اختار</option>
+        <option>من أقل من شهر</option>
+        <option>من 1 - 3 شهور</option>
+        <option>من أكتر من 3 شهور</option>
+        <option>مش فاكر</option>
+        <option>معملتش حشو  </option>
+
+      </select>
+
+      <label for="day">الوقت المناسب للحضور</label>
+      <input id="day" placeholder="مثال: أي يوم الصبح">
+
+      <label for="notes">ملاحظات (اختياري)</label>
+      <textarea id="notes" placeholder="أي حاجة تحبي نعرفها: ألم، حساسية، أدوية..."></textarea>
+
+      <label class="agree" id="agreeBox"><input type="checkbox" id="agree"> أتعهد بالالتزام بمواعيد الحجز</label>
+      <div class="err">لازم توافقي على الالتزام بالمواعيد</div>
+
+      <button type="submit">إرسال الطلب على واتساب 💬</button>
+      <p class="note">هيفتح واتساب والرسالة جاهزة، اضغط إرسال بس 🌷</p>
+    </form>
+  </section>
+
+  <div class="sup">الخدمة متاحة <b>مجانًا</b> في جامعة الإسكندرية<br>تحت إشراف <b>الدكاترة والمعيدين</b></div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
